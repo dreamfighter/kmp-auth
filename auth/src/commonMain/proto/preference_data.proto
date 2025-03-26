@@ -1,0 +1,18 @@
+// preference_data.proto file
+
+syntax = "proto3";
+
+package id.dreamfighter.kmp.auth.model;
+
+message UserData {
+  string name = 1;
+  string email = 2;
+  string uid = 3;
+  string accessToken = 4;
+  string address = 5;
+  string phone = 6;
+}
+
+message PreferenceData {
+  optional UserData user = 1;
+}
